@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #212922;
+    z-index: -100;
+  }
+  
+  /* form */
+  .form {
+    width: 290px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #141414c6;
+    border: 3px solid blue;
+    box-shadow: 0px 5px 10px 0px rgba(7, 220, 220),
+      1px 3px 4px 0px rgba(7, 220, 220);
+  }
+  .form:hover {
+    border: 3px solid green;
+    transition: 0.5s ease-in-out;
+  }
+  .box {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    width: 290px;
+    height: 250px;
+    transition: 0.5s;
+  }
+  .login {
+    position: absolute;
+    transition: 0.5s;
+    left: 150%;
+    width: 290px;
+  }
+  .singup {
+    position: absolute;
+    transition: 0.5s;
+    left: 0;
+    width: 290px;
+  }
+  input {
+    margin: 16px auto;
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    border-bottom: 2px solid green;
+    text-align: center;
+    color: white;
+    background: none;
+    outline: rgb(53, 53, 163);
+  }
+  input:hover {
+    border: 2px solid rgb(53, 53, 163);
+    width: 230px;
+    transition: 0.7s ease all;
+  }
+  .btn {
+    width: 120px;
+    height: 40px;
+    border: 2px solid blue;
+    background: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  .btn:hover {
+    border: 2px solid rgb(199, 144, 78);
+    transition: 0.5s ease;
+  }
+  
+  /* success background text */
+  .success {
+    position: fixed;
+    z-index: -1;
+    font-size: 250px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 30px #49ff18,
+      0 0 40px #49ff18, 0 0 50px #49ff18, 0 0 65px #49ff18, 0 0 95px #49ff18;
+    color: #ffffff;
+  }
+  
+  /* error background text */
+  .error {
+    position: fixed;
+    z-index: -1;
+    font-size: 350px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 30px #EB001F,
+      0 0 40px #EB001F, 0 0 50px #EB001F, 0 0 65px #EB001F, 0 0 95px #EB001F;
+    color: #ffffff;
+  }
+  
+  
+  /* responsives */
+  @media(max-width: 800px){
+    
+    .success {
+      font-size: 100px;
+    }
+    .error {
+      font-size: 150px;
+    }
+    }
+    @media(max-width: 460px){
+      
+    .success {
+      font-size: 80px;
+    }
+    .error {
+      font-size: 100px;
+    }
+    }
